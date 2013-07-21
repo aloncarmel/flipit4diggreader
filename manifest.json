@@ -1,0 +1,19 @@
+{
+ "name": "Flipit+ for Digg reader",
+ "description": "Add Flipboard Flipit+ button to Digg reader articles",
+ "homepage_url": "http://www.aloncarmel.me",
+ "icons": {
+     "16": "icon16.png",
+     "48": "icon48.png",
+     "128": "icon128.png" },
+ "permissions": [
+     "tabs",
+     "http://*/*"
+ ],
+ "version": "1.0",
+ "manifest_version": 2,
+ "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js"],
+    "matches": [ "http://www.digg.com/reader/*", "http://www.digg.com/reader","http://digg.com/reader/*","http://digg.com/reader"]
+  }]
+}
